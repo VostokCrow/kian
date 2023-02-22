@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP2-ABDOLMOHAMMADIAN-Kian</title>
+    <style>body{background-color: antiquewhite}</style>
+    <style>textarea{background-color: rgb(116, 112, 112)}</style>
+    <style>textarea{color: azure}</style>
+</head>
+<body>
+
+<h1><u>Questionnaire sur les langages HTML et CSS</u></h1>
+<p><b>Ce questionnaire porte sur les connaissances sur les langages HTML et CSS déjà abordés.</b></p>
+
+<form action="sendData.php" method="POST">
+
+    <fieldset>
+      <legend><b>Informations</b></legend>
+      <div>
+        <label for="nom">Nom : </label>
+        <input type="text" id="nom" name ="nom" placeholder="Entrez un nom" required>
+      </div>
+      <div>
+        <label for="prenom">Prénom : </label>
+        <input type="text" id="prenom" name ="prenom" placeholder="Entrez un prénom" required>
+      </div>
+      <div>
+        <label for ="email">Mail(unistra) : </label>
+        <input type="email" id="email" name="email" placeholder="nom@etu.unistra.fr"
+               pattern=".+@etu.unistra\.fr" required >
+      </div>
+      <div>
+        <label for="date">Date du jour :  </label>
+        <input type="date" id="date" name ="date" required>
+      </div>
+    </fieldset>
+
+    <p><b>Question 1</b></p>
+    <fieldset>
+      <legend>La balise header a le même rôle que la balise head</legend>
+      <div>
+        <input type="radio" name="radio1" id="radio1" required>
+        <label for="radio1">Vrai</label>
+        
+      </div>
+      <div>
+        <input type="radio" name="radio1" id="radio2" required >
+        <label for="radio2">Faux</label>
+        
+            
+      </div>
+    </fieldset>
+
+    <p><b>Question 2</b></p>
+    <fieldset>
+      <legend>Quels sont les attributs de la balise input ?</legend>
+      <div>
+        
+        <input id ="casea" type="checkbox" name ="required">
+        <label for ="casea">required</label><br>
+        <input id ="caseb" type="checkbox" name="password">
+        <label for="caseb">password</label><br>
+        <input id ="casec" type="checkbox" name="for">
+        <label for="casec" >for</label><br>
+        <input id="cased" type="checkbox" name="radio">
+        <label for="cased">radio </label><br>
+        <input id="casee" type="checkbox" name="placeholder">
+        <label for="casee">placeholder </label><br>
+      </div>
+    </fieldset>
+    
+    <p><b>Question 3</b></p>
+    <fieldset>
+      <div>
+          <label for ="answer-select">Quelle est l'utilité de CSS ? </label>
+          <select id ="answer-select">
+            <optgroup label="Langage de progammation">
+              <option value="cascading science sheets">C'est un langage concurrent à HTML</option>
+              <option value="cascading style sheets">C'est le langage utilisé par la majorité des sites web</option>
+              <option value="cascading style shapes">S'occupe de la mise en forme des fichiers HTML</option>
+            </optgroup>
+            <optgroup label="Logiciel">
+              <option value="cascading science sheets">Fais de la mise en forme</option>
+              <option value="cascading style sheets">C'est un logiciel de montage</option>
+              <option value="cascading style shapes">C'est un logiciel de traitement de son</option>
+            </optgroup>
+          
+          </select>
+      </div>
+  </fieldset>
+
+  <p><b>Question 4</b></p>
+  <div>
+    <label for="code-html">Ecrire la structure de base d'un fichier HTML : </label><br>
+  
+  <textarea id="code-html" name="structure-fichier-html" rows = "10" cols ="50" placeholder="Ecrivez votre code" required></textarea>
+  </div>
+
+  <div>
+    <input type="submit">
+  </div>
+
+</form>
+
+
+
+</body>
+</html>
